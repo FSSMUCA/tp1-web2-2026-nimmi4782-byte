@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3</h1>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+      const TAUX_TVA = 0.2;
+      let prixHT = 150;
+      let prixTTC = prixHT * (1 + TAUX_TVA);
+      console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${prixTTC - prixHT} € | Prix TTC : ${prixTTC} €`);
+      TAUX_TVA = 0.3;// Erreur : TypeError: Assignment to constant variable.
+    </script>
+  </body>
+</html>
